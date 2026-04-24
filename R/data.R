@@ -781,40 +781,30 @@
 "Derived_Monthly_Broadscale"
 
 
-#' Derived Annual broadscale data
+#' Derived Annual Broadscale data
 #'
 #' Derived data averaged over broad regions and years.
-#'
-#'
 #'
 #' @format A dataframe
 #' \describe{
 #'     \item{area}{Area name where data was collected}
 #'     \item{year}{The year in which data was collected}
-#'
-#'     \item{sea_temperature_at_sea_floor_july}{Temperature at sea floor during the month of July, averaged over NAFO areas 4X, 4W and 4V.}
-#'     \item{sea_surface_temperature}{Temperature at sea surface averaged over NAFO regions 4V, 4X and 4W as well as regional areas (Bay of Fundy + Gulf of Maine)}
-#'     \item{north_atlantic_oscillation}{North Atlantic Oscillation Index (NAO), calculated using sea level pressure difference between subtropical high and subpolar low}
-#'     \item{atlantic_multidecadal_oscillation}{Atlantic Multidecadal Oscillation Index (AMO), based on anomalies of sea surface temperatures in North Atlantic basin. }
-#'     \item{cold_intermediate_layer_volume}{A measure of the volume of the cold intermediate layer throughout the Gulf of St. Lawrence}
-#'     \item{sea_ice_volume}{Average ice volume for January - March in the Gulf of St. Lawrence, can be reasonably used as a proxy to represent sea ice volume on the Scotian Shelf. }
 #'     \item{density_gradient_0_50}{An index of stratification, measured as the density difference between 0 and 50 metres}
+#'     \item{sea_temperature_0}{An area-weighted index of temperature at the surface (0m) across the Scotian Shelf.}
+#'     \item{salinity_0}{An area-weighted index of salinity at the surface (0m) across the Scotian Shelf.}
 #'     \item{temperature_at_sea_floor}{Averaged water temperatures at sea floor, over NAFO areas 4X, 4V and 4W}
-#'     \item{minimum_temperature_in_cold_intermediate_layer}{Minimum temperature in the cold intermediate layer within the Gulf of St. Lawrence }
-#'     \item{salinity}{Discrete salinity measurements over a range of depths}
-#'     \item{sea_temperature}{Discrete sea temperature measurements over a range of depths}
-#'     \item{sea_surface_temperature_from_satellite}{Averages of sea surface temperatures infered from remote sensing (satellite) measurements}
-#'     \item{sea_surface_temperature_warming}{Derived metric calculating the warming of sea surface temperature averages over the Scotian Shelf}
-#'     \item{final_day_of_sea_ice}{The final day of sea ice observed in the Gulf of St. Lawrence. Note that this metric can be used as a reasonable proxy for the Scotian Shelf}
-#'     \item{sea_ice_area}{Average  of sea ice area, seaward of Cabot Strait}
-#'     \item{surface_chlorphyll}{Average surface chlorophyll as inferred from satellite (remote sensing) measurements}
+#'     \item{cold_intermediate_layer_volume}{A measure of the volume of the cold intermediate layer, defined as temperatures below or equal to 4degC, on the Scotian Shelf.}
+#'     \item{minimum_temperature_in_cold_intermediate_layer}{The mean minimum temperature in the cold intermediate layer on the Scotian Shelf.}
+#'     \item{north_atlantic_oscillation_noaa}{The National Oceanic and Atmospheric Administration North Atlantic Oscillation Index (NAO)}
+#'     \item{north_atlantic_oscillation_hurrell}{The December, January, February, and March (DJFM) Hurrell North Atlantic Oscillation Index (NAO) averaged over months December, January, February, and March.}
+#'     \item{sea_surface_temperature_from_satellite}{Temperature at sea surface derived from satellite data averaged over NAFO regions 4V, 4X and 4W as well as regional areas (Bay of Fundy + Gulf of Maine).}
 #' }
 #'
 #' @note
 #' \describe{
 #'    \item{time_scale}{Annual}
 #'    \item{regional_scale}{Broadscale}
-#'    \item{category}{ biological, biochemical, physical }
+#'    \item{category}{physical}
 #'    }
 #'
 #' @details The data can be cited as follows:
